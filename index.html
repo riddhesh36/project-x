@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Dream Players League</title>
+</head>
+<body>
+    <!-- Nav bar  -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand fw-bold font-monospace ">Info<span class="text-primary">Sport</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#Countries" class="nav-link">Countries</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarTeams" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Teams
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./team.html">Teams Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarPlayers" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Players
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./players-profile.html">Players Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Venue" class="nav-link">Venue</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Matches
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./matchList.html">List Of Matches</a></li>
+                          <li><a class="dropdown-item" href="./matchSum.html">Match Summary</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Results" class="nav-link">Results</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- showcase section  -->
+    <section class="bg-dark text-light p-5 p-lg-0 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Dream Players <span class="text-primary">League</span></h1>
+                    <p class="lead my-4">Get DPL 2021 Live Cricket Score, Scorecard, Schedules of International and Domestic cricket matches along with Latest News, Videos and ICC Cricket Rankings etc. </p>
+                    <button class="btn btn-primary btn-lg text-light" data-bs-toggle="modal" data-bs-target="#enroll">Watch Lates News</button>
+                </div>
+                <img class="img-fluid w-50 p-5 d-none d-sm-block" src="./images/cricket 1.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- newsletter section -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">
+                    Sign Up For Our Newsletter
+                </h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter Your E-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-dark btn-lg" type="button">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- boxes grid using -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-center text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"><i class="bi bi-laptop"></i></div>
+                        <h3 class="card-title mb-3">Watch Live</h3>
+                        <p class="card-text">
+                           Watch this match live on our own <span class="text-primary">Live Broadcast</span> Platform.
+                        </p>
+                        <a href="#" class="btn btn-primary text-light" >Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-center text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"><i class="bi bi-person-fill"></i></div>
+                        <h3 class="card-title mb-3"> Watch On Our App</h3>
+                        <p class="card-text">
+                            Download our <span class="text-primary">InfoSport App</span> from Playstore. Click on the button down below.
+                        </p>
+                        <a href="#" class="btn btn-primary text-light">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-center text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"><i class="bi bi-people"></i></div>
+                        <h3 class="card-title mb-3">Live Score</h3>
+                        <p class="card-text">
+                            Live score on our website.
+                            Grab some popcorns and watch the scores.
+                        </p>
+                        <a href="#" class="btn btn-primary text-light">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- learn section -->
+    <section id="Countries" class="p-5 bg-secondary">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="./images/batsmen.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>India VS Australia</h2>
+                    <p class="lead">India will host arch-rival Australia.</p>
+                    <p>The men who humbled Australia in their own backyard, defying odds and naysayers, are not the ones staring from the billboards in manic metro cities but shy, quiet and unassuming characters from the suburbs and the hinterlands.</p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i>
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 2  -->
+    <section class="p-5" id="Venue">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center md-4">Venue</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Stadium :</span> Wankhede Stadium.  
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Architect:</span> Shashi Prabhu.  
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Opened On:</span> 23 January 1975  
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Capacity :</span> 33,108
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- using aacordian bootstrap -->
+    <section class="p-5" id="questions">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordian">
+                <div class="accordion" id="questions">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Who do I get in touch with for my prize?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, iste voluptatibus. Modi eius ex aliquid, iusto rem similique deserunt praesentium necessitatibus ipsam facilis inventore voluptatum, quo commodi accusantium error? Ducimus accusantium in unde asperiores quidem nulla illo incidunt provident doloribus, quae voluptas eius impedit commodi aliquam dolore non consequuntur. Consectetur.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="questions">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How to watch the match on live channel ?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil iure vitae voluptatem ratione perspiciatis dolor sed eius consectetur laudantium assumenda ex hic earum sint ab repellat distinctio, quia eligendi delectus aliquam expedita? Similique magnam beatae eaque odio nobis, odit molestias, laudantium eveniet, pariatur minima non iste rem quae ad.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="questions">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          How to grab a coupon ?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequatur totam quae quisquam dolore provident, cupiditate commodi maxime culpa odio quam repudiandae nobis inventore autem facere eaque nesciunt explicabo nam dolorum pariatur cum quod quis quasi? Iste possimus deleniti rem culpa aspernatur. Libero debitis autem blanditiis suscipit temporibus dicta aliquid.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="questions">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How to download CricInfo for ios ?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequatur totam quae quisquam dolore provident, cupiditate commodi maxime culpa odio quam repudiandae nobis inventore autem facere eaque nesciunt explicabo nam dolorum pariatur cum quod quis quasi? Iste possimus deleniti rem culpa aspernatur. Libero debitis autem blanditiis suscipit temporibus dicta aliquid.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="questions">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How do I sign up ?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequatur totam quae quisquam dolore provident, cupiditate commodi maxime culpa odio quam repudiandae nobis inventore autem facere eaque nesciunt explicabo nam dolorum pariatur cum quod quis quasi? Iste possimus deleniti rem culpa aspernatur. Libero debitis autem blanditiis suscipit temporibus dicta aliquid.
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- instructors -->
+
+    <section class="p-5 bg-primary" id="Results">
+        <div class="container">
+            <h2 class="text-center text-light">Match Results</h2>
+            <p class="lead text-center text-light mb-5">India Vs Australia , India Won by 6 wickets (2 balls left).</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"><i class="bi bi-laptop"></i></div>
+                            <h3 class="card-title mb-3"> India Vs Australia</h3>
+                            <p class="card-text lead">India won the toss and choose to ball first.</p>
+                            <p class="card-text">Australia's lee took 3 Wickets, And Won MOTM Award.</p>
+                            <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-primary  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"><i class="bi bi-aspect-ratio"></i></div>
+                            <h3 class="card-title mb-3"> Scorecard</h3>
+                            <p class="card-text lead">IND  -  168/4 </p>
+                            <p class="card-text lead">AUS  - 164/6 </p>
+                            <p class="card-text lead">INDIA won by <span class="text-primary">6</span> wickets</p>
+                            
+
+                            <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-primary  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"><i class="bi bi-people"></i></div>
+                            <h3 class="card-title mb-3"> Player of the series</h3>
+                            <p class="card-text lead fw-bold">Shikhar Dhawan</p>
+                            <p class="card-text lead fw-normal">Shikhar Dhawan scored 215 runs in the series.</p>
+                            <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-primary  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"><i class="bi bi-person"></i></div>
+                            <h3 class="card-title mb-3"> Man Of The Match</h3>
+                            <p class="card-text lead fw-bold">Brett Lee</p>
+                            <p class="card-text lead fw-normal">Lee took 4 wickets with 142.5 SR </p>
+                            <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-primary  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-dark p-5 text-light text-center position-relative">
+        <div class="container">
+            <p class="lead"> Copyright &copy; InfoSport 2021 </p>
+            <p class="fw-light">Created by Riddhesh Patil</p>
+            <a href="" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- modal -->
+
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="enrollLabel">CricInfo News</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">Fill out this form and we will send you news link.</p>
+              <form>
+                  <div class="mb-3">
+                      <label for="first-name" class="col-form-label">First Name</label>
+                      <input class="form-control" id="first-name" type="text">
+                  </div>
+                  <div class="mb-3">
+                    <label for="last-name" class="col-form-label">Last Name</label>
+                    <input class="form-control" id="last-name" type="text">
+                </div><div class="mb-3">
+                    <label for="email" class="col-form-label">Email Address</label>
+                    <input class="form-control" id="email-name" type="text">
+                </div><div class="mb-3">
+                    <label for="phone" class="col-form-label">Phone Number</label>
+                    <input class="form-control" id="phone-name" type="text">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicmlkZGhlc2gzNiIsImEiOiJja3B0cHNnMjIwNTBjMm5uenUyemZ2YjltIn0.do8q-KMmsMzQ2K4RSf_9jQ';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center:[72.8257744, 18.9389191],
+        zoom:18,
+    });
+        
+        
+    </script>
+</body>
+</html>

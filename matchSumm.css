@@ -1,0 +1,41 @@
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 65px;
+}
+
+td,
+th {
+  border: 1px solid #bdfbff;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #bdfbff;
+}
+
+.title h1 {
+  margin-top: 25px;
+  font-family: poppins;
+  padding: 0px 10px;
+  background: blue;
+}
+
+.aus {
+  margin-bottom: 20px;
+}
+
+.title-aus {
+  margin-top: 25px;
+  font-family: poppins;
+  padding: 0px 10px;
+  background: yellow;
+}
